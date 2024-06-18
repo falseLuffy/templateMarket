@@ -28,7 +28,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <div class="hello"><span>hello world</span>,<span>请开始你的开发之旅。</span></div>
+  <div class="hello"><div>hello world</div><div>请开始你的开发之旅。</div></div>
 </template>
 
 <style scoped>
@@ -36,8 +36,10 @@ onBeforeMount(() => {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   font-size: 40px;
 }
 </style>
